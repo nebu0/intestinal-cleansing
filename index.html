@@ -179,16 +179,6 @@
             text-rendering: optimizeLegibility;
         }
 
-        /* Parchment texture overlay */
-        body::before {
-            content: '';
-            position: fixed;
-            inset: 0;
-            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-            opacity: 0.06;
-            pointer-events: none;
-            z-index: 0;
-        }
 
         ::selection {
             background: var(--color-primary);
@@ -404,17 +394,6 @@
             color: var(--color-text-muted);
         }
 
-        .toc-footer {
-            margin-top: auto;
-            padding-top: var(--space-lg);
-            border-top: 1px solid var(--color-border);
-        }
-
-        .toc-footer-text {
-            font-size: 0.8rem;
-            color: var(--color-text-muted);
-            font-style: italic;
-        }
 
         /* ============================================
            Main Content
@@ -1199,9 +1178,6 @@
                 padding: 0;
             }
 
-            body::before {
-                display: none;
-            }
 
             .section {
                 page-break-inside: avoid;
@@ -1293,11 +1269,6 @@
                 </ul>
             </div>
 
-            <div class="toc-footer">
-                <p class="toc-footer-text">
-                    Révisé le 9 décembre 2024
-                </p>
-            </div>
         </nav>
 
         <!-- Main Content -->
