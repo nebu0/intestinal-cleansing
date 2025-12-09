@@ -980,6 +980,19 @@
             border-color: var(--color-primary-light);
         }
 
+        /* Touch devices: disable sticky hover for burger */
+        @media (hover: none) {
+            .toc-toggle:hover {
+                background: var(--color-bg-button);
+                border-color: var(--color-border-button);
+            }
+
+            .toc-toggle:active {
+                background: var(--color-bg-cream);
+                border-color: var(--color-primary-light);
+            }
+        }
+
         /* Burger icon lines */
         .burger-line {
             display: block;
