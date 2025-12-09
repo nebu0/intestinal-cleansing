@@ -496,15 +496,6 @@
             font-weight: 400;
         }
 
-        /* Subsections numbering */
-        .subsection {
-            counter-increment: subsection;
-        }
-
-        .section {
-            counter-reset: subsection;
-        }
-
         /* ============================================
            Lists
            ============================================ */
@@ -917,6 +908,23 @@
             color: var(--color-bg-ivory);
             border-color: var(--color-primary);
             transform: scale(1.05);
+        }
+
+        /* Touch devices: disable sticky hover, use :active instead */
+        @media (hover: none) {
+            .floating-btn:hover {
+                background: var(--color-bg-ivory);
+                color: var(--color-primary);
+                border-color: var(--color-border);
+                transform: none;
+            }
+
+            .floating-btn:active {
+                background: var(--color-primary);
+                color: var(--color-bg-ivory);
+                border-color: var(--color-primary);
+                transform: scale(0.95);
+            }
         }
 
         .floating-btn svg {
