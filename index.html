@@ -107,6 +107,10 @@
 
             /* Overlay */
             --color-overlay: rgba(0, 0, 0, 0.5);
+
+            /* Boutons flottants */
+            --color-bg-button: var(--color-bg-ivory);
+            --color-border-button: var(--color-border);
         }
 
         /* Dark theme */
@@ -121,6 +125,10 @@
             --color-bg-ivory: #252018;
             --color-bg-toc: #1a1814;
             --color-bg-card: rgba(37, 32, 24, 0.9);
+
+            /* Boutons flottants - plus visibles en mode sombre */
+            --color-bg-button: #3a3428;
+            --color-border-button: #5a5040;
 
             --color-text-primary: #e8e4dc;
             --color-text-secondary: #c4baa8;
@@ -892,8 +900,8 @@
             width: 48px;
             height: 48px;
             border-radius: 50%;
-            border: 1px solid var(--color-border);
-            background: var(--color-bg-ivory);
+            border: 1px solid var(--color-border-button);
+            background: var(--color-bg-button);
             color: var(--color-primary);
             cursor: pointer;
             display: flex;
@@ -913,9 +921,9 @@
         /* Touch devices: disable sticky hover, use :active instead */
         @media (hover: none) {
             .floating-btn:hover {
-                background: var(--color-bg-ivory);
+                background: var(--color-bg-button);
                 color: var(--color-primary);
-                border-color: var(--color-border);
+                border-color: var(--color-border-button);
                 transform: none;
             }
 
@@ -956,8 +964,8 @@
             width: var(--burger-size);
             height: var(--burger-size);
             border-radius: var(--border-radius);
-            border: 1px solid var(--color-border);
-            background: var(--color-bg-ivory);
+            border: 1px solid var(--color-border-button);
+            background: var(--color-bg-button);
             cursor: pointer;
             align-items: center;
             justify-content: center;
