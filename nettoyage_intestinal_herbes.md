@@ -218,4 +218,4 @@ Zhong, L. L. D., Cheng, C. W., Kun, W., Dai, L., Hu, D. D., Ning, Z. W., ... & B
 
 ---
 
-*Document révisé le 9 décembre 2024. Les informations contenues dans ce document sont fournies à titre éducatif et ne remplacent pas un avis médical professionnel.*
+*Document révisé le 9 décembre 2025. Les informations contenues dans ce document sont fournies à titre éducatif et ne remplacent pas un avis médical professionnel.*
